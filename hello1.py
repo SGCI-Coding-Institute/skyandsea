@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "<p>Just to make sure it works!</p>"
+    return "okay!"
 
     
 #@app.route("/go")
