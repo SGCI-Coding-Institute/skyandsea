@@ -1,13 +1,17 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "okay!"
+    return render_template('first.html')
 
-    
-#@app.route("/go")
-#def run_model():
-#    return this_guy_joe.go(3000,10,0,5)
+@app.route("/map")
+def mapit():
+    return render_template('maptest.html')
 
+@app.route('/pictures')
+def pict():
+    return render_template('portrait.html')
 
+if __name__ == '__main__':
+   app.run()
