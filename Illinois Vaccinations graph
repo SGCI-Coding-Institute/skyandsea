@@ -1,0 +1,26 @@
+import matplotlib.pyplot as plt
+
+# line 1 points
+x1 = ["Dec","Jan","Feb","March","April","May","June","July"]
+y1 = [1,149760,1046711,2856397,6054124,9411594,11438141,12622470]
+# plotting the line 1 points
+plt.plot(x1, y1, label = "Number of Vaccines Administered")
+
+# line 2 points
+x2 = ["Dec","Jan","Feb","March","April","May","June","July"]
+y2 = [0,29,237116,901131,2300488,4203188,5440604,6180810]
+# plotting the line 2 points
+plt.plot(x2, y2, label = "Persons Fully Vaccinated")
+
+# naming the x axis
+plt.xlabel('Month')
+# naming the y axis
+plt.ylabel('# of vaccines and persons')
+# giving a title to my graph
+plt.title('Illinois Vaccinations')
+
+# show a legend on the plot
+plt.legend()
+
+# function to show the plot
+plt.show()
